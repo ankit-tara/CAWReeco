@@ -1,0 +1,304 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Burger",
+            "brand": "FastFood Co.",
+            "price": 6.99,
+            "quantity": 50,
+            "total": 349.50,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Pizza",
+            "brand": "Pizza Palace",
+            "price": 9.99,
+            "quantity": 30,
+            "total": 299.70,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Spaghetti",
+            "brand": "Italian Delights",
+            "price": 12.99,
+            "quantity": 20,
+            "total": 259.80,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Sushi",
+            "brand": "Sushi Express",
+            "price": 14.99,
+            "quantity": 40,
+            "total": 599.60,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Salad",
+            "brand": "Healthy Greens",
+            "price": 5.99,
+            "quantity": 60,
+            "total": 359.40,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Sandwich",
+            "brand": "Cafe Bites",
+            "price": 7.99,
+            "quantity": 45,
+            "total": 359.55,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Taco",
+            "brand": "Taco Haven",
+            "price": 4.99,
+            "quantity": 55,
+            "total": 274.45,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Pasta",
+            "brand": "Italian Delights",
+            "price": 11.99,
+            "quantity": 25,
+            "total": 299.75,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Steak",
+            "brand": "Steakhouse Grill",
+            "price": 19.99,
+            "quantity": 15,
+            "total": 299.85,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Ice Cream",
+            "brand": "Sweet Treats",
+            "price": 3.99,
+            "quantity": 70,
+            "total": 279.30,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Pancakes",
+            "brand": "Morning Delights",
+            "price": 7.49,
+            "quantity": 40,
+            "total": 299.60,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Waffles",
+            "brand": "Morning Delights",
+            "price": 6.99,
+            "quantity": 35,
+            "total": 244.65,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Doughnut",
+            "brand": "Sweet Treats",
+            "price": 1.99,
+            "quantity": 80,
+            "total": 159.20,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Fried Chicken",
+            "brand": "Fry Master",
+            "price": 8.99,
+            "quantity": 30,
+            "total": 269.70,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 15,
+            "name": "French Fries",
+            "brand": "FastFood Co.",
+            "price": 2.99,
+            "quantity": 100,
+            "total": 299.00,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Milkshake",
+            "brand": "Sweet Treats",
+            "price": 4.49,
+            "quantity": 50,
+            "total": 224.50,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Burrito",
+            "brand": "Taco Haven",
+            "price": 6.99,
+            "quantity": 35,
+            "total": 244.65,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Soda",
+            "brand": "Beverage World",
+            "price": 1.49,
+            "quantity": 150,
+            "total": 223.50,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Cupcake",
+            "brand": "Sweet Treats",
+            "price": 2.29,
+            "quantity": 65,
+            "total": 148.85,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 20,
+            "name": "Hamburger",
+            "brand": "FastFood Co.",
+            "price": 5.99,
+            "quantity": 40,
+            "total": 239.60,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 21,
+            "name": "Hot Dog",
+            "brand": "FastFood Co.",
+            "price": 3.49,
+            "quantity": 60,
+            "total": 209.40,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Popcorn",
+            "brand": "Snack Central",
+            "price": 2.99,
+            "quantity": 75,
+            "total": 224.25,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Bagel",
+            "brand": "Bakery Delights",
+            "price": 1.99,
+            "quantity": 90,
+            "total": 179.10,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Nachos",
+            "brand": "Snack Central",
+            "price": 4.99,
+            "quantity": 45,
+            "total": 224.55,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Sushi Rolls",
+            "brand": "Sushi Express",
+            "price": 12.99,
+            "quantity": 25,
+            "total": 324.75,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 26,
+            "name": "Smoothie",
+            "brand": "Healthy Greens",
+            "price": 6.49,
+            "quantity": 55,
+            "total": 356.95,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 27,
+            "name": "Pretzel",
+            "brand": "Snack Central",
+            "price": 2.99,
+            "quantity": 70,
+            "total": 209.30,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 28,
+            "name": "Cinnamon Roll",
+            "brand": "Bakery Delights",
+            "price": 3.99,
+            "quantity": 50,
+            "total": 199.50,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 29,
+            "name": "Chicken Wings",
+            "brand": "Fry Master",
+            "price": 10.99,
+            "quantity": 20,
+            "total": 219.80,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        },
+        {
+            "id": 30,
+            "name": "Cheesecake",
+            "brand": "Sweet Treats",
+            "price": 7.99,
+            "quantity": 30,
+            "total": 239.70,
+            "status": "",
+            "imgSrc": "./img/Avocado.jpg"
+        }
+    ]
+}
