@@ -69,7 +69,7 @@ function ProductList() {
                             column.key === "name" ?
                                 // name view
                                 <TableCell key={column.key}>
-                                    {column.key === "name" ? <img alt="Product Image" style={{ marginRight: "10px" }} width="40" src={row.imgSrc} /> : ""}
+                                    {column.key === "name" ? <img alt="Product" style={{ marginRight: "10px" }} width="40" src={row.imgSrc} /> : ""}
                                     {row[column.key]}
                                 </TableCell>
                                 :
