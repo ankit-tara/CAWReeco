@@ -1,5 +1,5 @@
 // reducers/productSlice.js
-import { createSlice, createAsyncThunk, current } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 // Define an initial state
 const initialState = {
     products: [],

@@ -42,7 +42,7 @@ function ProductForm({ product, onClose }) {
         <h2>{product?.name}</h2>
         <h4>{product?.brand}</h4>
         <div className="section-wrapper">
-          <img src={product?.imgSrc} />
+          <img src={product?.imgSrc} alt="Product Image" />
           <form onSubmit={handleSubmit}>
             <div className="inputWrapper">
               <p>Price: </p>
