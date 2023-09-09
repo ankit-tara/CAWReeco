@@ -19,7 +19,7 @@ const ModalWrapper = styled.div`
 const ModalContent = styled.div`
   background-color: #fff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 100%;
@@ -30,13 +30,13 @@ const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
   border: none;
   cursor: pointer;
   background: #fff;
   border-radius: 50%;
   font-size: 18px;
 `;
+
 
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) {

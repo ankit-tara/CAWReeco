@@ -31,7 +31,7 @@ const TableRow = styled.tr`
 `;
 
 const TableCell = styled.td`
-  padding: 12px;
+  // padding: 12px;
 `;
 
 function Table({ children }) {
@@ -61,5 +61,5 @@ function Table({ children }) {
   );
 }
 
-export { Table, TableHeader, TableRow, TableCell };
+export { Table, TableWrapper, StyledTable, TableHeader, TableRow, TableCell };
 

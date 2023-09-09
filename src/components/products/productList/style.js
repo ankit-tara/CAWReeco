@@ -39,11 +39,24 @@ export const NoBackgroundBtn = styled.button`
 
 export const StatusWrapper = styled.div`
         background-color: ${props => (
-        props.status === "Approved" ? `green` : props.status === "Missing" ? `orange` : props.status === "Urgent Missing" ? `red` : props.status === "" ? `white` : `green`
+        props.status === "Approved" ? `#3eca72` : props.status === "Missing" ? `#f26b44` : props.status === "Urgent Missing" ? `#db2114` : props.status === "" ? `white` : `green`
     )};
         color: white;
-        width: 100px;
+        width: max-content;
         text-align: center;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 10px 20px;
+        border-radius: 25px;
+        line-height: 16px;
+`
+
+export const ImageNameWrapper = styled.div`
+        display: flex;
+        align-items: center;
+`
+
+export const NoData = styled.div`
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
 `

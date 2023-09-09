@@ -1,5 +1,6 @@
 // Modal.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 // Styled components for the modal
@@ -14,9 +15,11 @@ const HeaderWrapper = styled.div`
 
 function Header() {
     return (
-        <HeaderWrapper>
-            <h1>Recco</h1>
-        </HeaderWrapper>
+      <HeaderWrapper>
+        <Link to="/">
+          <h1>Recco</h1>
+        </Link>
+      </HeaderWrapper>
     );
 }
 
