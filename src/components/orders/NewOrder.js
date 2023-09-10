@@ -49,7 +49,7 @@ function NewOrder({ isOpen = true, closeModal, orderId }) {
           let quantityIndex = newOrder?.indexOf(item.id);
           return {
             ...item,
-            quantity: quantityIndex != "-1" ? newOrder[quantityIndex] : "",
+            quantity: quantityIndex !== "-1" ? newOrder[quantityIndex] : "",
           };
         } else {
           return null;
