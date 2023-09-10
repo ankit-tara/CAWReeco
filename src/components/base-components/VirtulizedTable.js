@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Column, Table, AutoSizer } from 'react-virtualized';
-import 'react-virtualized/styles.css';
 const ROW_HEIGHT = 48;
 
 function VirtulizedTable({ rows , columns }) {
