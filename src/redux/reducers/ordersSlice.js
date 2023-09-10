@@ -1,5 +1,5 @@
 // reducers/orderSlice.js
-import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 import { generateUniqueId } from "../../utils";
 // Define an initial state
 const initialState = {

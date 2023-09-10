@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addOrder } from "../../../redux/reducers/ordersSlice";
 import { Link } from "react-router-dom";
 import { fetchProducts } from "../../../redux/reducers/productSlice";
-import { PageContainer, OrderListContainer, AddButton, OrderLink } from './styles'
+import {
+  PageContainer,
+  OrderListContainer,
+  AddButton,
+  OrderLink,
+} from "./styles";
 const OrdersList = () => {
   const orders = useSelector((state) => state.orders.orders);
   const dispatch = useDispatch();
 
   const handleAddOrder = () => {
-   dispatch(addOrder([]))
-  }
+    dispatch(addOrder([]));
+  };
 
   useEffect(() => {
     dispatch(fetchProducts());

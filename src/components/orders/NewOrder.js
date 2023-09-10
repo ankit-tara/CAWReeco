@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { debounceFunction, isNumberOrDecimal } from "../../utils";
 import VirtulizedTable from "../base-components/VirtulizedTable";
-import { addOrder, updateList } from "../../redux/reducers/ordersSlice";
+import { updateList } from "../../redux/reducers/ordersSlice";
 import EmptyView from "../base-components/NoData";
 import StyledButton from "../base-components/StyledButton";
 
@@ -46,7 +46,7 @@ function NewOrder({ isOpen = true, closeModal, orderId }) {
     const results = products
       .map((item) => {
         if (item.name.toLowerCase().includes(val.toLowerCase())) {
-          let quantityIndex = newOrder?.indexOf(item.id)
+          let quantityIndex = newOrder?.indexOf(item.id);
           return {
             ...item,
             quantity: quantityIndex != "-1" ? newOrder[quantityIndex] : "",
