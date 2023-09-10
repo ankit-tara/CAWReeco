@@ -3,7 +3,6 @@ import Modal from "../base-components/Modal";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { debounceFunction, isNumberOrDecimal } from "../../utils";
-import "react-virtualized/styles.css";
 import VirtulizedTable from "../base-components/VirtulizedTable";
 import { addOrder, updateList } from "../../redux/reducers/ordersSlice";
 import EmptyView from "../base-components/NoData";
