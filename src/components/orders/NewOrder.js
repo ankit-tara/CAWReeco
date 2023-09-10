@@ -6,32 +6,35 @@ import { debounceFunction, isNumberOrDecimal } from "../../utils";
 import "react-virtualized/styles.css";
 import VirtulizedTable from "../base-components/VirtulizedTable";
 import { addOrder, updateList } from "../../redux/reducers/ordersSlice";
+import EmptyView from "../base-components/NoData";
+import StyledButton from "../base-components/StyledButton";
 
 // Styled components for the modal
 const NewItemWrapper = styled.div`
   height: 500px;
   width: 100%;
   input {
-    width: 300px;
     height: 28px;
     border-radius: 25px;
     border: solid 1px #ccc;
     padding-left: 10px;
   }
+  .search {
+    width: 300px;
+  }
 `;
-const ActionButton = styled.button`
-  // position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 18px;
-  margin-left: auto;
-  display: block;
+
+const ModalFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .action-items button {
+    margin-right: 10px;
+    border: none;
+  }
 `;
+
 function NewOrder({ isOpen = true, closeModal, orderId }) {
   const products = useSelector((state) => state.products.products);
   const [searchTerm, setSearchTerm] = useState("");
@@ -44,9 +47,10 @@ function NewOrder({ isOpen = true, closeModal, orderId }) {
     const results = products
       .map((item) => {
         if (item.name.toLowerCase().includes(val.toLowerCase())) {
+          let quantityIndex = newOrder?.indexOf(item.id)
           return {
             ...item,
-            quantity: "",
+            quantity: quantityIndex != "-1" ? newOrder[quantityIndex] : "",
           };
         } else {
           return null;
@@ -140,8 +144,8 @@ function NewOrder({ isOpen = true, closeModal, orderId }) {
         orderId,
       })
     );
-    setSearchTerm('')
-    setIsInReviewState(true)
+    setSearchTerm("");
+    setIsInReviewState(true);
     setNewOrder([]);
     setFilterProducts([]);
     closeModal();
@@ -150,51 +154,65 @@ function NewOrder({ isOpen = true, closeModal, orderId }) {
   const rows = isInReviewState
     ? filterProducts
     : extractFilteredProducts(filterProducts, newOrder);
-
   return (
-    <Modal isOpen={isOpen} onClose={closeModal}>
+    <Modal
+      isOpen={isOpen}
+      onClose={() => {
+        closeModal();
+        setSearchTerm("");
+        setFilterProducts([]);
+      }}
+    >
       <NewItemWrapper>
         <h2>Add Product from the Sysco's catalog</h2>
         <p>Search Product from the Sysco's catalog and add</p>
         <input
+          className="search"
+          disabled={!isInReviewState}
           type="text"
           placeholder="search"
           value={searchTerm}
           onChange={(e) => handleInputChange(e)}
         />
-        <VirtulizedTable rows={rows} columns={columns} />
+        {filterProducts?.length ? (
+          <VirtulizedTable rows={rows} columns={columns} />
+        ) : (
+          <EmptyView msg="No Data" />
+        )}
       </NewItemWrapper>
 
-      <div>
+      <ModalFooter>
         <p>Total: {newOrder.length} products</p>
         {isInReviewState ? (
-          <ActionButton
+          <StyledButton
+            primary={!newOrder.length ? false : true}
             onClick={() => {
               setIsInReviewState(false);
             }}
-            disabled={!newOrder.length}
+            disabled={newOrder.length === 0}
           >
             Review
-          </ActionButton>
+          </StyledButton>
         ) : (
-          <div>
-            <ActionButton
+          <div className="action-items">
+            <StyledButton
               onClick={() => {
                 setIsInReviewState(true);
               }}
             >
               Back
-            </ActionButton>
-            <ActionButton
+            </StyledButton>
+            <StyledButton
+              primary
               onClick={() => {
                 createOrder();
               }}
             >
               Add
-            </ActionButton>
+            </StyledButton>
           </div>
         )}
-      </div>
+      </ModalFooter>
     </Modal>
   );
 }

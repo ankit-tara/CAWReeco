@@ -15,14 +15,24 @@ import {
   NoBackgroundBtn,
   MissingModalWrapper,
   ImageNameWrapper,
-  NoData,
 } from "./style";
 import Modal from "../../base-components/Modal";
+import StyledBtn from "../../base-components/StyledButton"
 import NewOrder from "../../orders/NewOrder";
 import { updateOrder } from "../../../redux/reducers/ordersSlice";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import EmptyView from "../../base-components/NoData";
 
 function ProductList() {
+  const orders = useSelector((state) => state.orders.orders);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (orders.length === 0) {
+      navigate(`/`);
+    }
+  }, [orders, navigate]);
+
   const columns = [
     { key: "name", header: "Product Name" },
     { key: "brand", header: "Brand" },
@@ -37,7 +47,7 @@ function ProductList() {
   const [isMissingModalOpen, setIsMissingModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isNewOrderOpen, setIsNewOrderOpen] = useState(false);
-  const params = useParams(); 
+  const params = useParams();
 
   const closeMissingModal = () => {
     setIsMissingModalOpen(false);
@@ -88,13 +98,15 @@ function ProductList() {
 
   return (
     <ProductListWrapper>
-      <p
-        onClick={() => {
-          setIsNewOrderOpen(true);
-        }}
-      >
-        Add new
-      </p>
+      <div className="btn-wrapper">
+        <StyledBtn
+          onClick={() => {
+            setIsNewOrderOpen(true);
+          }}
+        >
+          Add new
+        </StyledBtn>
+      </div>
       <Modal isOpen={isEditModalOpen} onClose={closeModal}>
         <EditForm
           product={selectedProduct}
@@ -179,7 +191,7 @@ function ProductList() {
         ) : (
           <TableRow>
             <TableCell colSpan={columns.length}>
-              <NoData>No Data</NoData>
+              <EmptyView msg="No Data" />
             </TableCell>
           </TableRow>
         )}

@@ -1,34 +1,34 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FormContainer = styled.div`
   padding: 20px;
   border-radius: 5px;
   form {
-      display: flex;
-      flex-direction: column;
-      width: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
   }
 
   input {
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
   }
-  .inputWrapper{
+  .inputWrapper {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
-  .section-wrapper{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      img{
-        width: 250px;
-      }
+  .section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 250px;
+    }
   }
-  `;
+`;
 export const QuantityContainer = styled.div`
   display: flex;
   align-items: center;
@@ -51,11 +51,12 @@ export const QuantityInput = styled.input`
 `;
 
 export const QuantityButton = styled.button`
-  background-color: #007bff;
+  background-color: #153815;
   color: white;
   border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
+  width: 30px;
+  padding: 8px 10px;
+  border-radius: 50%;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 10px;
 `;

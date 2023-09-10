@@ -7,7 +7,7 @@ import {
   QuantityButton,
 } from "./style";
 import { updateOrder } from "../../../redux/reducers/ordersSlice";
-
+import StyledButton from "../../base-components/StyledButton";
 function EditForm({ product, onClose, orderId }) {
   const [productDetails, setProductDetails] = useState({
     name: "",
@@ -31,7 +31,7 @@ function EditForm({ product, onClose, orderId }) {
   }, [product]);
 
   const handleQuantityChange = (value) => {
-    const newQuantity = Math.max(0, productDetails.quantity + value);
+    const newQuantity = Math.max(0, Number(productDetails.quantity) + value);
     setProductDetails({ ...productDetails, quantity: newQuantity });
   };
 
@@ -42,7 +42,6 @@ function EditForm({ product, onClose, orderId }) {
     );
     onClose();
   };
-
 
   return (
     <FormContainer>
@@ -100,7 +99,7 @@ function EditForm({ product, onClose, orderId }) {
             <p>Total:</p>
             <p>{product?.total}</p>
           </div>
-          <button type="submit">Update</button>
+          <StyledButton primary type="submit">Update</StyledButton>
         </form>
       </div>
     </FormContainer>

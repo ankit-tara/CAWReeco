@@ -1,21 +1,7 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { Column, Table, AutoSizer } from 'react-virtualized';
 import 'react-virtualized/styles.css';
 const ROW_HEIGHT = 48;
-
-// Styled components for the modal
-const NewItemWrapper = styled.div`
-    height: 200px;
-    width: 100%;
-    input {
-        width: 300px;
-        height: 28px;
-        border-radius: 25px;
-        border: solid 1px #ccc;
-        padding-left: 10px;
-    }
-`;
 
 function VirtulizedTable({ rows , columns }) {
     const getRowStyles = ({ index }) => {
@@ -34,7 +20,7 @@ function VirtulizedTable({ rows , columns }) {
 
     return (
         <AutoSizer>
-            {({ height, width }) => (
+            {({ width }) => (
                 <Table
                     height={380}
                     width={width}

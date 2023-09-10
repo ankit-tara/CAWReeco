@@ -1,6 +1,6 @@
 // reducers/orderSlice.js
 import { createSlice, createAsyncThunk, current } from "@reduxjs/toolkit";
-import {generateUniqueId} from "../../utils"
+import { generateUniqueId } from "../../utils";
 // Define an initial state
 const initialState = {
   orders: [], // array of orders
@@ -19,20 +19,19 @@ const orderSlice = createSlice({
         products: action.payload,
       });
     },
-    updateList:(state, action) => {
+    updateList: (state, action) => {
       const { products, orderId } = action.payload;
-       const getOrder = state.orders.find(
-         (order) => order.orderId === orderId
-       );
-      console.log("--test", { products, orderId, getOrder, }, current(state));
+      const getOrder = state.orders.find((order) => order.orderId === orderId);
+      console.log("--test", { products, orderId, getOrder }, current(state));
 
-       getOrder.products = getOrder.products.concat(products);
-       
+      getOrder.products = getOrder.products.concat(products);
     },
     updateOrder: (state, action) => {
       const { product, orderId } = action.payload;
 
-      const getOrderById = state.orders.find((order) => order.orderId === orderId);
+      const getOrderById = state.orders.find(
+        (order) => order.orderId === orderId
+      );
       console.log("--test", { product, orderId }, current(state), getOrderById);
 
       const existingProduct = getOrderById.products.find(
@@ -68,6 +67,7 @@ const orderSlice = createSlice({
   },
 });
 
-export const { addOrder, updateOrder, deleteOrder , updateList } = orderSlice.actions;
+export const { addOrder, updateOrder, deleteOrder, updateList } =
+  orderSlice.actions;
 
 export default orderSlice.reducer;

@@ -7,6 +7,11 @@ export const ProductListWrapper = styled.div`
   border: solid 1px #ccc;
   background: #fff;
   border-radius: 10px;
+
+  .btn-wrapper{
+    margin-bottom: 20px;
+    text-align: right
+  }
 `;
 
 export const ActionButtons = styled.div`
@@ -38,25 +43,25 @@ export const NoBackgroundBtn = styled.button`
 `
 
 export const StatusWrapper = styled.div`
-        background-color: ${props => (
-        props.status === "Approved" ? `#3eca72` : props.status === "Missing" ? `#f26b44` : props.status === "Urgent Missing" ? `#db2114` : props.status === "" ? `white` : `green`
-    )};
-        color: white;
-        width: max-content;
-        text-align: center;
-        padding: 10px 20px;
-        border-radius: 25px;
-        line-height: 16px;
-`
+  background-color: ${(props) =>
+    props.status === "Approved"
+      ? `#3eca72`
+      : props.status === "Missing"
+      ? `#f26b44`
+      : props.status === "Urgent Missing"
+      ? `#db2114`
+      : props.status === ""
+      ? `white`
+      : `#3eca72`};
+  color: white;
+  width: max-content;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  line-height: 16px;
+`;
 
 export const ImageNameWrapper = styled.div`
         display: flex;
         align-items: center;
-`
-
-export const NoData = styled.div`
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 300px;
 `

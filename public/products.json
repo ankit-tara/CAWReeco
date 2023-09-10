@@ -8,7 +8,7 @@
             "quantity": 50,
             "total": 349.50,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "quantity": 30,
             "total": 299.70,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "quantity": 20,
             "total": 259.80,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "quantity": 40,
             "total": 599.60,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@
             "quantity": 60,
             "total": 359.40,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@
             "quantity": 45,
             "total": 359.55,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@
             "quantity": 55,
             "total": 274.45,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 8,
@@ -78,7 +78,7 @@
             "quantity": 25,
             "total": 299.75,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 9,
@@ -88,7 +88,7 @@
             "quantity": 15,
             "total": 299.85,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 10,
@@ -98,7 +98,7 @@
             "quantity": 70,
             "total": 279.30,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 11,
@@ -108,7 +108,7 @@
             "quantity": 40,
             "total": 299.60,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 12,
@@ -118,7 +118,7 @@
             "quantity": 35,
             "total": 244.65,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 13,
@@ -128,7 +128,7 @@
             "quantity": 80,
             "total": 159.20,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 14,
@@ -138,7 +138,7 @@
             "quantity": 30,
             "total": 269.70,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 15,
@@ -148,7 +148,7 @@
             "quantity": 100,
             "total": 299.00,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 16,
@@ -158,7 +158,7 @@
             "quantity": 50,
             "total": 224.50,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 17,
@@ -168,7 +168,7 @@
             "quantity": 35,
             "total": 244.65,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 18,
@@ -178,7 +178,7 @@
             "quantity": 150,
             "total": 223.50,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 19,
@@ -188,7 +188,7 @@
             "quantity": 65,
             "total": 148.85,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 20,
@@ -198,7 +198,7 @@
             "quantity": 40,
             "total": 239.60,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 21,
@@ -208,7 +208,7 @@
             "quantity": 60,
             "total": 209.40,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 22,
@@ -218,7 +218,7 @@
             "quantity": 75,
             "total": 224.25,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 23,
@@ -228,7 +228,7 @@
             "quantity": 90,
             "total": 179.10,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 24,
@@ -238,7 +238,7 @@
             "quantity": 45,
             "total": 224.55,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 25,
@@ -248,7 +248,7 @@
             "quantity": 25,
             "total": 324.75,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 26,
@@ -258,7 +258,7 @@
             "quantity": 55,
             "total": 356.95,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 27,
@@ -268,7 +268,7 @@
             "quantity": 70,
             "total": 209.30,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 28,
@@ -278,7 +278,7 @@
             "quantity": 50,
             "total": 199.50,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 29,
@@ -288,7 +288,7 @@
             "quantity": 20,
             "total": 219.80,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         },
         {
             "id": 30,
@@ -298,7 +298,7 @@
             "quantity": 30,
             "total": 239.70,
             "status": "",
-            "imgSrc": "./img/Avocado.jpg"
+            "imgSrc": "/img/Avocado.jpg"
         }
     ]
 }

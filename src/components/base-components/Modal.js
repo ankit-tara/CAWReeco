@@ -1,8 +1,6 @@
-// Modal.js
 import React from 'react';
 import styled from 'styled-components';
 
-// Styled components for the modal
 const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
